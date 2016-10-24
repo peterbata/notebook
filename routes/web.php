@@ -14,6 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('about', function() {
-    echo "Goodbye Cruel World";
+Route::get('/home/{name}', function($name) {
+    return "My name is $name";
 });
